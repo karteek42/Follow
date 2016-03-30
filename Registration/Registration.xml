@@ -1,0 +1,11 @@
+<Page loaded="pageLoaded">
+    <Page.actionBar>
+        <ActionBar title="Follow" android.icon="~/Images/accessibility.png" android.iconVisibility="always" />
+    </Page.actionBar>
+    <StackLayout id="registrationPageLayout">
+        <TextField id="userName" hint="User Name" text="{{userName}}"/>
+        <TextField id="Password" hint="Password" secure="true" text="{{password}}"/>
+        <TextField id="contactNumber" hint="Contact Number" text="{{contactNumber}}"/>
+        <Button id="register" text="Register App" tap="{{Register}}"/>
+    </StackLayout>
+</Page>

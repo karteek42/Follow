@@ -1,0 +1,22 @@
+<Page loaded="pageLoaded">
+    <Page.actionBar>
+        <ActionBar title="Follow" android.icon="~/Images/accessibility.png" android.iconVisibility="always" />
+    </Page.actionBar>
+    <DockLayout id="CreateTaskPageLayout">
+        <StackLayout dock="top">
+            <TextField id="taskName" text="{{taskName}}" hint="Task Name" />
+            <TextField id="category" text="{{category}}" hint="Category" />
+            <TextField  tap="{{showDatePicker}}" text="{{datePickerVal}}" hint="Due Date & Time" />
+            <TextField id="assignee" text="{{assignee}}" hint="Add Assignee" />
+            <Button id="assignTask" tap="{{assignTask}}" text="Assign Task" />
+            <ActivityIndicator/>
+        </StackLayout>
+        <StackLayout dock="bottom" id="DatePickerParent" visibility="{{ showDetails ? 'visible' : 'collapsed' }}">
+            <StackLayout id="borderLayout" />
+            <Label id="datePickingDone" text="Done" tap="{{selectDate}}"/>
+            <DatePicker id="datePicker" day="{{date}}" month="{{month}}" year="{{year}}" minDate="{{minDate}}" 
+                                                visibility="{{ showDatePicker ? 'visible' : 'collapsed'}}" />
+            <TimePicker id="timePicker" hour="{{hour}}" minute="{{minute}}" visibility="{{ showTimePicker ? 'visible' : 'collapsed'}}"/>
+        </StackLayout>
+     </DockLayout>
+</Page>

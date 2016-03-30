@@ -1,0 +1,26 @@
+#DatePickerParent{
+    background-color: gray;
+}
+
+#datePickingDone{
+    float: right;
+    color:blue;
+    font-weight: bold;
+    background-color: white;
+    text-align: right;
+    padding-right: 10;
+    }
+#CreateTaskPageLayout{
+    background-color: #E6B8AF;
+}
+#assignTask{
+    background-color: #1F497D;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding-top: 5;
+    padding-bottom: 5;
+}
+#borderLayout{
+    background-color: black;
+    height: 1;
+}
